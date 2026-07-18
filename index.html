@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Craft | Premium Recipes & Culinary Arts</title>
+    <meta name="description" content="Discover professional-grade, step-by-step recipes optimized for execution at home. Fast, healthy, and premium cuisine curated by experts.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- JSON-LD Recipe / Organization Schema for Premium Search Visibility -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Gourmet Craft",
+      "url": "https://yourusername.github.io/recipe-site/"
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="brand-logo" style="font-weight:700; font-size:1.4rem; color:var(--primary); text-decoration:none;">GOURMET<span>CRAFT</span></a>
+            <nav>
+                <a href="#recipes" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">Recipes</a>
+                <a href="#categories" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">Categories</a>
+                <a href="#about" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section Section -->
+        <section class="hero-section" style="padding: 60px 0; text-align: center;">
+            <h1 style="font-size: 3rem; margin-bottom: 16px;">Elevate Your Daily Cooking</h1>
+            <p style="color: var(--text-muted); margin-bottom: 24px;">Exquisite recipes styled with stunning photography and calculated measurements.</p>
+            <input type="text" id="recipeSearch" placeholder="Search by cuisine, ingredient, or preference..." style="padding: 14px 24px; width: 100%; max-width: 500px; border-radius: 30px; border: 1px solid #ddd; font-size: 1rem;">
+        </section>
+
+        <!-- Dynamic Recipe Showcase Grid -->
+        <section id="recipes">
+            <h2>Trending Recipes</h2>
+            <div class="recipe-grid" id="featuredGrid">
+                <!-- Javascript will auto-generate elements here -->
+                <article class="recipe-card">
+                    <img src="assets/images/recipes/pancakes-hero.webp" alt="Lemon Ricotta Pancakes" loading="lazy" width="1200" height="800">
+                    <div style="padding: 20px;">
+                        <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Breakfast</span>
+                        <h3 style="margin: 8px 0 12px 0;">Lemon Ricotta Pancakes</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Light, fluffy, and perfectly zesty artisanal morning pancakes.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
