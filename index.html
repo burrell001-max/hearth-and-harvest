@@ -3,85 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hearth & Harvest | Premium Recipes & Culinary Arts</title>
-    <meta name="description" content="Discover professional-grade, step-by-step recipes optimized for execution at home. Fast, healthy, and premium cuisine curated by experts.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- JSON-LD Recipe / Organization Schema for Premium Search Visibility -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Hearth & Harvest ",
-      "url": "https://yourusername.github.io/recipe-site/"
-    }
-    </script>
+    <title>Hearth & Harvest | Premium Recipes</title>
+    <style>
+        :root {
+            --primary: #e67e22;
+            --text-dark: #2c3e50;
+            --text-muted: #7f8c8d;
+            --bg-light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: #333;
+        }
+        header {
+            background: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: var(--text-dark);
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .recipe-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
 
     <header>
-        <div class="container nav-container">
-            <a href="#" class="brand-logo" style="font-weight:700; font-size:1.4rem; color:var(--primary); text-decoration:none;">Hearth<span>Harvest</span></a>
-            <nav>
-                <a href="#recipes" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">Recipes</a>
-                <a href="#categories" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">Categories</a>
-                <a href="#about" style="margin-left: 20px; text-decoration: none; color: var(--text-main);">About</a>
-            </nav>
-        </div>
+        <a href="index.html" class="logo">HearthHarvest</a>
+        <nav>
+            <a href="#recipes">Recipes</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
     </header>
 
-    <main class="container">
-        <!-- Hero Section Section -->
-        <section class="hero-section" style="padding: 60px 0; text-align: center;">
-            <h1 style="font-size: 3rem; margin-bottom: 16px;">Elevate Your Daily Cooking</h1>
-            <p style="color: var(--text-muted); margin-bottom: 24px;">Exquisite recipes styled with stunning photography and calculated measurements.</p>
-            <input type="text" id="recipeSearch" placeholder="Search by cuisine, ingredient, or preference..." style="padding: 14px 24px; width: 100%; max-width: 500px; border-radius: 30px; border: 1px solid #ddd; font-size: 1rem;">
-        </section>
-
-        <!-- Dynamic Recipe Showcase Grid -->
+    <main>
         <section id="recipes">
             <h2>Trending Recipes</h2>
-            <div class="recipe-grid" id="featuredGrid">
-            <!-- Card 1: Garlic Oil Pasta -->
-       <!-- Card 1: Garlic Oil Pasta -->
-        <a href="garlic-oil-pasta.html" style="text-decoration: none; color: inherit;">
-            <article class="recipe-card">
-                <img src="assets/images/recipes/garlic-oil-pasta.webp" alt="Garlic Oil Pasta" loading="lazy" width="1200" height="800">
-                <div style="padding: 20px;">
-                    <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Dinner</span>
-                    <h3 style="margin: 8px 0 12px 0;">Garlic & Oil Pasta</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">A classic Italian staple made with robust olive oil, perfectly toasted garlic, and a hint of red pepper flakes.</p>
-                </div>
-            </article>
-        </a>
-
-<!-- Card 2: Creamy Tomato Pasta -->
-        <a href="creamy-tomato-pasta.html" style="text-decoration: none; color: inherit;">
-            <article class="recipe-card">
-                <img src="assets/images/recipes/creamy-tomato-pasta.webp" alt="Creamy Tomato Pasta" loading="lazy" width="1200" height="800">
-                <div style="padding: 20px;">
-                    <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Dinner</span>
-                    <h3 style="margin: 8px 0 12px 0;">Creamy Tomato Pasta</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Rich, velvety tomato sauce simmered with fresh herbs and a touch of cream over perfectly al dente noodles.</p>
-                </div>
-            </article>
-        </a>
-
-        <!-- Card 3: One Pan Pasta -->
-        <a href="one-pan-pasta.html" style="text-decoration: none; color: inherit;">
-            <article class="recipe-card">
-                <img src="assets/images/recipes/one-pan-pasta.webp" alt="One-Pan Pasta" loading="lazy" width="1200" height="800">
-                <div style="padding: 20px;">
-                    <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Quick Meals</span>
-                    <h3 style="margin: 8px 0 12px 0;">One-Pan Pasta Delicacy</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">Effortless cooking meets premium flavors. Everything cooks together in one vessel for maximum taste profile.</p>
-                </div>
-            </article>
-        </a>
-            </div>
+            <!-- The grid container stays completely empty; JavaScript will fill it -->
+            <div class="recipe-grid" id="featuredGrid"></div>
         </section>
     </main>
 
-    
+    <!-- Link your database file, then run the engine script -->
+    <script src="recipes.js"></script>
+    <script>
+        const grid = document.getElementById('featuredGrid');
+        
+        // Clear out anything inside the container to start completely fresh
+        grid.innerHTML = '';
+
+        // Loop through your catalog array and drop cards on the screen automatically
+        recipeCatalog.forEach(recipe => {
+            grid.innerHTML += `
+                <a href="recipe-details.html?id=${recipe.id}" style="text-decoration: none; color: inherit;">
+                    <article class="recipe-card">
+                        <img src="${recipe.img}" alt="${recipe.title}" loading="lazy" width="1200" height="800">
+                        <div style="padding: 20px;">
+                            <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">${recipe.category}</span>
+                            <h3 style="margin: 8px 0 12px 0;">${recipe.title}</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">${recipe.description}</p>
+                        </div>
+                    </article>
+                </a>
+            `;
+        });
+    </script>
 </body>
 </html>

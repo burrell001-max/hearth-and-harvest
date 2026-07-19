@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const recipeCatalog = [
     {
         id: "garlic-oil-pasta",
@@ -70,3 +71,6 @@ const recipeCatalog = [
         ]
     }
 ];
+=======
+
+>>>>>>> 543516ebde5f4edc56e53a6c52ca0d24712c6f44
