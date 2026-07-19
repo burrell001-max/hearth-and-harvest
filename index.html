@@ -257,5 +257,18 @@
         </section>
     </main>
 
+    <script>
+        // Live-filter the recipe cards as the user types
+        document.querySelector('.search-bar').addEventListener('input', function (e) {
+            const query = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('#featuredGrid > a').forEach(function (card) {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const desc = card.querySelector('p').textContent.toLowerCase();
+                const matches = title.includes(query) || desc.includes(query);
+                card.style.display = matches ? '' : 'none';
+            });
+        });
+    </script>
+
 </body>
 </html>
