@@ -42,18 +42,35 @@
         <section id="recipes">
             <h2>Trending Recipes</h2>
             <div class="recipe-grid" id="featuredGrid">
-            <!-- Card 1: Garlic Oil Pasta -->
-       <!-- Card 1: Garlic Oil Pasta -->
-        <a href="garlic-oil-pasta.html" style="text-decoration: none; color: inherit;">
-            <article class="recipe-card">
-                <img src="assets/images/recipes/garlic-oil-pasta.webp" alt="Garlic Oil Pasta" loading="lazy" width="1200" height="800">
-                <div style="padding: 20px;">
-                    <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Dinner</span>
-                    <h3 style="margin: 8px 0 12px 0;">Garlic & Oil Pasta</h3>
-                    <p style="color: var(--text-muted); font-size: 0.95rem;">A classic Italian staple made with robust olive oil, perfectly toasted garlic, and a hint of red pepper flakes.</p>
-                </div>
-            </article>
-        </a>
+           <h2>Trending Recipes</h2>
+    <!-- The grid container stays completely empty; JavaScript will fill it -->
+    <div class="recipe-grid" id="featuredGrid"></div>
+</section>
+
+<!-- Link your new database file, then run the engine script -->
+<script src="recipes.js"></script>
+<script>
+    const grid = document.getElementById('featuredGrid');
+    
+    // Clear out anything inside the grid container to start fresh
+    grid.innerHTML = '';
+
+    // Loop through your catalog array and drop cards on the screen automatically
+    recipeCatalog.forEach(recipe => {
+        grid.innerHTML += `
+            <a href="recipe-details.html?id=${recipe.id}" style="text-decoration: none; color: inherit;">
+                <article class="recipe-card">
+                    <img src="${recipe.img}" alt="${recipe.title}" loading="lazy" width="1200" height="800">
+                    <div style="padding: 20px;">
+                        <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">${recipe.category}</span>
+                        <h3 style="margin: 8px 0 12px 0;">${recipe.title}</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">${recipe.description}</p>
+                    </div>
+                </article>
+            </a>
+        `;
+    });
+</script>
 
 <!-- Card 2: Creamy Tomato Pasta -->
         <a href="creamy-tomato-pasta.html" style="text-decoration: none; color: inherit;">
