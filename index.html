@@ -50,7 +50,7 @@
         }
         .recipe-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
         .recipe-card {
@@ -84,34 +84,47 @@
     <main>
         <section id="recipes">
             <h2>Trending Recipes</h2>
-            <!-- The grid container stays completely empty; JavaScript will fill it -->
-            <div class="recipe-grid" id="featuredGrid"></div>
-        </section>
-    </main>
+            <div class="recipe-grid" id="featuredGrid">
 
-    <!-- Link your database file, then run the engine script -->
-    <script src="recipes.js"></script>
-    <script>
-        const grid = document.getElementById('featuredGrid');
-        
-        // Clear out anything inside the container to start completely fresh
-        grid.innerHTML = '';
-
-        // Loop through your catalog array and drop cards on the screen automatically
-        recipeCatalog.forEach(recipe => {
-            grid.innerHTML += `
-                <a href="recipe-details.html?id=${recipe.id}" style="text-decoration: none; color: inherit;">
+                <!-- Card 1: Garlic Oil Pasta -->
+                <a href="garlic-oil-pasta.html" style="text-decoration: none; color: inherit;">
                     <article class="recipe-card">
-                        <img src="${recipe.img}" alt="${recipe.title}" loading="lazy" width="1200" height="800">
+                        <img src="assets/images/recipes/garlic-oil-pasta.webp" alt="Garlic Oil Pasta" loading="lazy" width="1200" height="800">
                         <div style="padding: 20px;">
-                            <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">${recipe.category}</span>
-                            <h3 style="margin: 8px 0 12px 0;">${recipe.title}</h3>
-                            <p style="color: var(--text-muted); font-size: 0.95rem;">${recipe.description}</p>
+                            <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Dinner</span>
+                            <h3 style="margin: 8px 0 12px 0;">Garlic & Oil Pasta</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">A classic Italian staple made with robust olive oil, perfectly toasted garlic, and a hint of red pepper flakes.</p>
                         </div>
                     </article>
                 </a>
-            `;
-        });
-    </script>
+
+                <!-- Card 2: Creamy Tomato Pasta -->
+                <a href="creamy-tomato-pasta.html" style="text-decoration: none; color: inherit;">
+                    <article class="recipe-card">
+                        <img src="assets/images/recipes/creamy-tomato-pasta.webp" alt="Creamy Tomato Pasta" loading="lazy" width="1200" height="800">
+                        <div style="padding: 20px;">
+                            <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Dinner</span>
+                            <h3 style="margin: 8px 0 12px 0;">Creamy Tomato Pasta</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">Rich, velvety tomato sauce simmered with fresh herbs and a touch of cream over perfectly al dente noodles.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <!-- Card 3: One Pan Pasta -->
+                <a href="one-pan-pasta.html" style="text-decoration: none; color: inherit;">
+                    <article class="recipe-card">
+                        <img src="assets/images/recipes/one-pan-pasta.webp" alt="One-Pan Pasta" loading="lazy" width="1200" height="800">
+                        <div style="padding: 20px;">
+                            <span style="color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">Quick Meals</span>
+                            <h3 style="margin: 8px 0 12px 0;">One-Pan Pasta Delicacy</h3>
+                            <p style="color: var(--text-muted); font-size: 0.95rem;">Effortless cooking meets premium flavors. Everything cooks together in one vessel for maximum taste profile.</p>
+                        </div>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
