@@ -129,6 +129,18 @@
     </section>
 
     <main>
+      <section id="categories" style="margin-bottom: 50px;">
+            <h2>Categories</h2>
+            <div id="categoryChips" style="display: flex; flex-wrap: wrap; gap: 12px;">
+                <button class="category-chip" data-category="all" style="padding: 10px 22px; border-radius: 50px; border: 2px solid var(--primary); background: var(--primary); color: #fff; font-weight: 600; cursor: pointer;">All</button>
+                <button class="category-chip" data-category="dinner" style="padding: 10px 22px; border-radius: 50px; border: 2px solid #e2e8f0; background: #fff; color: var(--text-dark); font-weight: 600; cursor: pointer;">Dinner</button>
+                <button class="category-chip" data-category="breakfast" style="padding: 10px 22px; border-radius: 50px; border: 2px solid #e2e8f0; background: #fff; color: var(--text-dark); font-weight: 600; cursor: pointer;">Breakfast</button>
+                <button class="category-chip" data-category="dessert" style="padding: 10px 22px; border-radius: 50px; border: 2px solid #e2e8f0; background: #fff; color: var(--text-dark); font-weight: 600; cursor: pointer;">Dessert</button>
+                <button class="category-chip" data-category="healthy" style="padding: 10px 22px; border-radius: 50px; border: 2px solid #e2e8f0; background: #fff; color: var(--text-dark); font-weight: 600; cursor: pointer;">Healthy</button>
+                <button class="category-chip" data-category="quick meals" style="padding: 10px 22px; border-radius: 50px; border: 2px solid #e2e8f0; background: #fff; color: var(--text-dark); font-weight: 600; cursor: pointer;">Quick Meals</button>
+            </div>
+        </section>
+
       <section id="recipes">
             <h2>Trending Recipes</h2>
             <div class="recipe-grid" id="featuredGrid">
@@ -256,6 +268,44 @@
             </div>
         </section>
     </main>
+
+    <script>
+        const searchInput = document.querySelector('.search-bar');
+        const categoryChips = document.querySelectorAll('.category-chip');
+        let activeCategory = 'all';
+
+        function applyFilters() {
+            const query = searchInput.value.trim().toLowerCase();
+            document.querySelectorAll('#featuredGrid > a').forEach(function (card) {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const desc = card.querySelector('p').textContent.toLowerCase();
+                const category = card.querySelector('span').textContent.toLowerCase();
+                const matchesSearch = title.includes(query) || desc.includes(query);
+                const matchesCategory = activeCategory === 'all' || category === activeCategory;
+                card.style.display = (matchesSearch && matchesCategory) ? '' : 'none';
+            });
+        }
+
+        // Live-filter the recipe cards as the user types
+        searchInput.addEventListener('input', applyFilters);
+
+        // Filter by category chip, and jump down to the recipes
+        categoryChips.forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                activeCategory = chip.dataset.category;
+                categoryChips.forEach(function (c) {
+                    c.style.background = '#fff';
+                    c.style.color = 'var(--text-dark)';
+                    c.style.borderColor = '#e2e8f0';
+                });
+                chip.style.background = 'var(--primary)';
+                chip.style.color = '#fff';
+                chip.style.borderColor = 'var(--primary)';
+                applyFilters();
+                document.getElementById('recipes').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
 
 </body>
 </html>
