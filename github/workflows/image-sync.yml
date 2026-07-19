@@ -1,0 +1,22 @@
+name: Automated Image Asset Sync
+on: [push] # Fires off automatically whenever you save code edits
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-node-version: 20
+
+      - name: Install Graphic Processing Dependencies
+        run: npm install
+
+      - name: Execute Image Download Pipeline Script
+        run: npm run get-images
+        env:
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
