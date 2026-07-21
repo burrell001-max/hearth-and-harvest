@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found | Hearth & Harvest</title>
-<meta name="description" content="The page you're looking for doesn't exist on Hearth & Harvest.">
-<meta name="robots" content="noindex">
+<title>Contact | Hearth & Harvest</title>
+<meta name="description" content="Get in touch with Hearth & Harvest — questions, recipe requests, or just say hi.">
+<meta property="og:title" content="Contact | Hearth & Harvest">
+<meta property="og:description" content="Questions, recipe requests, or just want to say hi? We'd love to hear from you.">
+<meta property="og:type" content="website">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
     :root {
@@ -17,12 +19,10 @@
     * { box-sizing: border-box; }
     body {
         margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
         background: var(--bg);
         color: var(--text);
         font-family: Georgia, 'Times New Roman', serif;
+        line-height: 1.7;
     }
     header {
         display: flex;
@@ -31,28 +31,36 @@
         padding: 20px 40px;
         border-bottom: 1px solid #e7ded1;
     }
-    .logo { font-weight: bold; font-size: 1.3rem; color: var(--text); text-decoration: none; }
-    nav a { color: var(--text); text-decoration: none; margin-left: 24px; font-size: 0.95rem; }
+    .logo {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: var(--text);
+        text-decoration: none;
+    }
+    nav a {
+        color: var(--text);
+        text-decoration: none;
+        margin-left: 24px;
+        font-size: 0.95rem;
+    }
     nav a:hover { color: var(--primary); }
     main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 60px 24px 40px;
         text-align: center;
-        padding: 60px 24px;
     }
-    h1 { font-size: 4rem; margin-bottom: 10px; }
-    p { color: var(--text); margin-bottom: 30px; font-size: 1.1rem; }
-    .btn {
+    h1 { font-size: 2.2rem; margin-bottom: 8px; }
+    .subtitle { color: var(--text-muted); margin-bottom: 32px; font-style: italic; }
+    .email-button {
         display: inline-block;
         background: var(--primary);
         color: #fff;
         text-decoration: none;
         padding: 14px 28px;
         border-radius: 8px;
-        font-weight: bold;
+        font-size: 1.05rem;
+        margin-top: 16px;
     }
     footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; }
     footer a { color: var(--primary); text-decoration: none; margin: 0 8px; }
@@ -69,9 +77,10 @@
     </header>
 
     <main>
-        <h1>404</h1>
-        <p>Looks like this recipe wandered off the counter. The page you're looking for doesn't exist.</p>
-        <a class="btn" href="index.html">← Back to Hearth &amp; Harvest</a>
+        <h1>Get in Touch</h1>
+        <p class="subtitle">Questions, recipe requests, or just want to say hi? We'd love to hear from you.</p>
+
+        <a class="email-button" href="mailto:hello@hearthandharvest.com">hello@hearthandharvest.com</a>
     </main>
 
     <footer>
