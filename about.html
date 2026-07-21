@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Hearth & Harvest</title>
-    <meta name="description" content="Meet Kent Williams, the home cook behind Hearth & Harvest, and learn what this site is all about.">
-    <style>
-        :root { --primary: #e67e22; --text-dark: #2c3e50; --text-muted: #7f8c8d; --bg-light: #f8f9fa; }
-        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: #333; line-height: 1.6; }
-        header { background: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
-        nav a { margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 500; }
-        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: var(--text-dark); margin-top: 0; }
-        h2 { color: var(--text-dark); border-left: 4px solid var(--primary); padding-left: 10px; margin-top: 30px; }
-        p { margin-bottom: 16px; }
-        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 500; }
-        .signature { font-style: italic; color: var(--text-muted); margin-top: 30px; }
-        footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; }
-        footer a { color: var(--primary); text-decoration: none; margin: 0 8px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Hearth & Harvest</title>
+<style>
+    :root {
+        --bg: #faf6ef;
+        --text: #2b1d13;
+        --text-muted: #8a7a68;
+        --primary: #b5651d;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Georgia, 'Times New Roman', serif;
+        line-height: 1.7;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        border-bottom: 1px solid #e7ded1;
+    }
+    .logo {
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: var(--text);
+        text-decoration: none;
+    }
+    nav a {
+        color: var(--text);
+        text-decoration: none;
+        margin-left: 24px;
+        font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--primary); }
+    main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 60px 24px 40px;
+    }
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 8px;
+    }
+    .subtitle {
+        color: var(--text-muted);
+        margin-bottom: 32px;
+        font-style: italic;
+    }
+    p { margin-bottom: 20px; }
+    footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; }
+    footer a { color: var(--primary); text-decoration: none; margin: 0 8px; }
+</style>
 </head>
 <body>
-
     <header>
-        <a href="index.html" class="logo">HearthHarvest</a>
+        <a class="logo" href="index.html">Hearth&amp;Harvest</a>
         <nav>
             <a href="index.html#recipes">Recipes</a>
             <a href="index.html#categories">Categories</a>
@@ -32,29 +68,19 @@
         </nav>
     </header>
 
-    <main class="container">
-        <a href="index.html" class="back-link">← Back to Home</a>
+    <main>
+        <h1>About Hearth &amp; Harvest</h1>
+        <p class="subtitle">Simple, elegant, premium recipes crafted for the home cook.</p>
 
-        <h1>About Hearth & Harvest</h1>
+        <p>Hearth &amp; Harvest started with a simple idea: cooking well at home shouldn't require professional training or a pantry full of hard-to-find ingredients. Every recipe here is tested, refined, and written so it actually works the first time you make it.</p>
 
-        <p>Hi, I'm Kent Williams — the person behind Hearth & Harvest. This site started as a simple collection of the recipes I actually cook at home: the pasta dishes I make on a busy weeknight, the breakfast I turn to on a slow Sunday morning, and the desserts I bring when I want to impress without spending all day in the kitchen.</p>
+        <p>We believe good food brings people together. Whether it's a quick weeknight dinner, a cozy breakfast, or a dessert worth celebrating, our goal is to help you cook with confidence and enjoy the process along the way.</p>
 
-        <p>I'm not a professional chef. I'm a home cook who got tired of recipe sites that bury a simple dish under ten paragraphs of unrelated stories before you ever reach the ingredients list. Every recipe here is written the way I'd want to read it myself: clear ingredients, straightforward steps, and no filler.</p>
-
-        <h2>What you'll find here</h2>
-        <p>Hearth & Harvest is organized around real life — quick weeknight dinners, healthy options, breakfasts, and the occasional indulgent dessert. Every recipe has been tested in my own kitchen before it makes it onto the site. If something doesn't work, it doesn't get published.</p>
-
-        <h2>Why "Hearth & Harvest"</h2>
-        <p>A hearth is where a home is warmed and fed. A harvest is what makes good cooking possible in the first place — good ingredients, simply prepared. That's the whole philosophy of this site: nothing fancier than it needs to be, but made with care.</p>
-
-        <p>Thanks for stopping by, and I hope you find something worth cooking.</p>
-
-        <p class="signature">— Kent Williams</p>
+        <p>Thanks for stopping by our kitchen. We hope you find something delicious to make tonight.</p>
     </main>
 
     <footer>
         <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="contact.html">Contact</a>
     </footer>
-
 </body>
 </html>
