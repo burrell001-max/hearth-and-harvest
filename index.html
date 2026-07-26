@@ -640,10 +640,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 cards[j] = tmp;
             }
 
-            // Re-append in shuffled order (appendChild moves existing nodes,
-            // it doesn't duplicate them).
-            cards.forEach(function (card) {
-                grid.appendChild(card);
+            // Apply the shuffled order visually via CSS `order`, instead of
+            // moving the <img loading="lazy"> nodes in the DOM. Reparenting
+            // a lazy-loaded <img> (even via appendChild, which "moves" rather
+            // than duplicates) can cause iOS Safari to drop its lazy-load
+            // bookkeeping entirely, so the image never fires a network
+            // request and never fires onerror either - it just sits
+            // permanently unloaded, which is the broken "?" icon you saw.
+            // Setting `order` reorders the grid without touching the nodes.
+            cards.forEach(function (card, i) {
+                card.style.order = i;
             });
         }
 
