@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baked Ziti | Hearth & Harvest</title>
+    <style>
+        :root { --primary: #e67e22; --text-dark: #2c3e50; --text-muted: #7f8c8d; --bg-light: #f8f9fa; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: #333; line-height: 1.6; }
+        header { background: white; padding: 20px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary); text-decoration: none; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 500; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .recipe-meta { display: flex; gap: 20px; color: var(--text-muted); margin: 20px 0; font-size: 0.95rem; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .recipe-image { width: 100%; max-height: 450px; object-fit: cover; border-radius: 8px; margin-bottom: 30px; }
+        h1 { color: var(--text-dark); margin-top: 0; }
+        h2 { color: var(--text-dark); border-left: 4px solid var(--primary); padding-left: 10px; margin-top: 30px; }
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--primary); text-decoration: none; font-weight: 500; }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">HearthHarvest</a>
+        <nav><a href="index.html#recipes">Recipes</a><a href="index.html#categories">Categories</a></nav>
+    </header>
+    <main class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Baked Ziti</h1>
+        <div class="recipe-meta">
+            <span><strong>Prep Time:</strong> 20 mins</span>
+            <span><strong>Cook Time:</strong> 35 mins</span>
+            <span><strong>Servings:</strong> 6</span>
+        </div>
+        <img src="assets/images/recipes/baked-ziti.webp" alt="Baked Ziti" class="recipe-image" onerror="this.onerror=null;this.src='data:image/svg+xml;charset=UTF-8,'+encodeURIComponent('<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;1200&quot; height=&quot;450&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23f1f2f6&quot;/><text x=&quot;50%&quot; y=&quot;50%&quot; font-family=&quot;Segoe UI, sans-serif&quot; font-size=&quot;32&quot; fill=&quot;%23b0b7bd&quot; text-anchor=&quot;middle&quot; dominant-baseline=&quot;middle&quot;>🍽️ Photo coming soon</text></svg>')">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>1 lb ziti pasta</li>
+            <li>1 lb ground Italian sausage or ground beef</li>
+            <li>1 jar (24 oz) marinara sauce</li>
+            <li>15 oz whole milk ricotta cheese</li>
+            <li>1 large egg</li>
+            <li>2 cups shredded mozzarella cheese</li>
+            <li>1/2 cup grated parmesan cheese</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tsp dried Italian seasoning</li>
+            <li>Fresh basil, for garnish</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Preheat oven to 375°F (190°C). Bring a large pot of salted water to a boil and cook the ziti until just shy of al dente (it will finish cooking in the oven). Drain and set aside.</li>
+            <li>While the pasta cooks, brown the sausage or beef in a large skillet over medium heat, breaking it up as it cooks. Add the garlic and Italian seasoning and cook for another minute, then stir in the marinara sauce and simmer for 5 minutes.</li>
+            <li>In a bowl, mix the ricotta with the egg and half of the parmesan until smooth.</li>
+            <li>Combine the cooked pasta with the meat sauce, then layer half of it into a greased 9x13 baking dish. Dollop the ricotta mixture over the top, then cover with the remaining pasta.</li>
+            <li>Sprinkle the mozzarella and remaining parmesan evenly over the top. Bake uncovered for 25-30 minutes until bubbling and golden. Let rest for 10 minutes, then garnish with fresh basil and serve.</li>
+        </ol>
+    </main>
+</body>
+</html>
