@@ -1,0 +1,33 @@
+name: Automated Image Asset Sync
+on: [push] # Fires off automatically whenever you save code edits
+
+permissions:
+  contents: write # needed so this workflow can commit the generated images back to the repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Graphic Processing Dependencies
+        run: npm install
+
+      - name: Execute Image Download Pipeline Script
+        run: npm run get-images
+        env:
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
+
+      - name: Commit generated images back to the repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/images/recipes
+          git diff --staged --quiet || git commit -m "Auto-generate optimized recipe images [skip ci]"
+          git push
