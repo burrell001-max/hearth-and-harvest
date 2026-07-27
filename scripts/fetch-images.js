@@ -36,6 +36,10 @@ async function run() {
     await downloadAndOptimizeImage('https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=1200', 'assets/images/recipes/garlic-oil-pasta.webp');
     await downloadAndOptimizeImage('https://images.unsplash.com/photo-1546549032-9571cd6b27df?q=80&w=1200', 'assets/images/recipes/creamy-tomato-pasta.webp');
     await downloadAndOptimizeImage('https://images.unsplash.com/photo-1608897013039-887f21d8c804?q=80&w=1200', 'assets/images/recipes/one-pan-pasta.webp');
+    await downloadAndOptimizeImage('https://images.unsplash.com/photo-1626028937210-754d2118d5f7?q=80&w=1200', 'assets/images/recipes/baked-ziti.webp');
+    await downloadAndOptimizeImage('https://images.unsplash.com/photo-1497888329096-51c27beff665?q=80&w=1200', 'assets/images/recipes/overnight-oats.webp');
+    await downloadAndOptimizeImage('https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=1200', 'assets/images/recipes/sesame-noodles.webp');
+    await downloadAndOptimizeImage('https://images.unsplash.com/photo-1515037893149-de7f840978e2?q=80&w=1200', 'assets/images/recipes/fudgy-brownies.webp');
     
     console.log("Image pipeline complete!");
 }
