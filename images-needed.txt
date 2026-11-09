@@ -1,0 +1,63 @@
+IMAGES NEEDED - Hearth & Harvest
+Format: .webp, ideally 1200x800 (3:2), file name must match exactly (case-sensitive).
+
+=== A. NEW PHOTOS TO CREATE (20 recipes with new/rewritten pages) ===
+recipes/chocolate-cake.webp                             <- chocolate-cake.html
+recipes/avocado-toast.webp                              <- avocado-toast.html
+recipes/tuscan-garlic-shrimp.webp                       <- Tuscan-garlic-shrimp.html
+recipes/cranberry-orange-sauce.webp                     <- cranberry-orange-sauce.html
+recipes/garlic-herb-mashed-potatoes.webp                <- garlic-herb-mashed-potatoes.html
+recipes/classic-pumpkin-pie.webp                        <- classic-pumpkin-pie.html
+recipes/soft-gingerbread-cookies.webp                   <- soft-gingerbread-cookies.html
+recipes/classic-sage-stuffing.webp                      <- classic-sage-stuffing.html
+recipes/maple-roasted-carrots.webp                      <- maple-roasted-carrots.html
+recipes/green-bean-casserole.webp                       <- green-bean-casserole.html
+recipes/egg-fried-rice.webp                             <- egg-fried-rice.html
+recipes/chicken-quesadillas.webp                        <- chicken-quesadillas.html
+recipes/caprese-grilled-cheese.webp                     <- caprese-grilled-cheese.html
+recipes/quinoa-chickpea-salad.webp                      <- quinoa-chickpea-salad.html
+recipes/lemon-garlic-baked-cod.webp                     <- lemon-garlic-baked-cod.html
+recipes/veggie-egg-muffin-cups.webp                     <- veggie-egg-muffin-cups.html
+recipes/cinnamon-french-toast-casserole.webp            <- cinnamon-french-toast-casserole.html
+recipes/peppermint-bark.webp                            <- peppermint-bark.html
+recipes/classic-sugar-cookies.webp                      <- classic-sugar-cookies.html
+recipes/herb-roasted-turkey-breast.webp                 <- herb-roasted-turkey-breast.html
+
+=== B. EXISTING RECIPES (37) - keep the images you already have at these paths ===
+assets/images/recipes/garlic-oil-pasta.webp             <- garlic-oil-pasta.html
+assets/images/recipes/creamy-tomato-pasta.webp          <- creamy-tomato-pasta.html
+assets/images/recipes/one-pan-pasta.webp                <- one-pan-pasta.html
+alfredo.webp                                            <- chicken-alfredo.html
+pancakes.webp                                           <- classic-fluffy-pancakes.html
+tacos.webp                                              <- street-style-beef-tacos.html
+smoothie.webp                                           <- strawberry-smoothie.html
+salmon.webp                                             <- garlic-herb-salmon.html
+recipes/Creamy Pesto Cavatappi.webp                     <- pesto-cavatappi.html
+recipes/Classic Homemade Lasagna.webp                   <- homemade-lasagna.html
+recipes/beef-broccoli.webp                              <- beef-broccoli-stir-fry.html
+recipes/Margherita Pizza.webp                           <- margherita-pizza.html
+recipes/Banana Bread.webp                               <- banana-bread.html
+recipes/Greek Salad.webp                                <- greek-salad.html
+recipes/Chicken Caesar Wrap.webp                        <- chicken-caesar-wrap.html
+recipes/Vegetable Curry.webp                            <- vegetable-curry.html
+recipes/Blueberry Muffins.webp                          <- blueberry-muffins.html
+recipes/Shrimp Scampi.webp                              <- shrimp-scampi.html
+recipes/apple-crisp.webp                                <- apple-crisp.html
+recipes/berry-baked-oatmeal.webp                        <- berry-baked-oatmeal.html
+recipes/caprese-chicken.webp                            <- caprese-chicken.html
+recipes/classic-caesar-salad.webp                       <- classic-caesar-salad.html
+recipes/classic-french-toast.webp                       <- classic-french-toast.html
+recipes/mushroom-risotto.webp                           <- creamy-mushroom-risotto.html
+recipes/creamy-tomato-soup.webp                         <- creamy-tomato-soup.html
+recipes/garlic-parmesan-wings.webp                      <- garlic-parmesan-wings.html
+recipes/greek-lemon-potatoes.webp                       <- greek-lemon-potatoes.html
+recipes/honey-garlic-chicken.webp                       <- honey-garlic-chicken.html
+recipes/lemon-bars.webp                                 <- lemon-bars.html
+recipes/lemon-blueberry-muffins.webp                    <- lemon-blueberry-muffins.html
+recipes/lemon-herb-chicken.webp                         <- lemon-herb-chicken.html
+recipes/loaded-avocado-toast.webp                       <- loaded-avocado-toast.html
+recipes/mediterranean-salad.webp                        <- mediterranean-salad.html
+assets/images/recipes/baked-ziti.webp                   <- baked-ziti.html
+assets/images/recipes/overnight-oats.webp               <- overnight-oats.html
+assets/images/recipes/sesame-noodles.webp               <- sesame-noodles.html
+assets/images/recipes/fudgy-brownies.webp               <- fudgy-brownies.html
