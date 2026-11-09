@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://burrell001-max.github.io/hearth-and-harvest/sitemap.xml
+Sitemap: https://hearth-and-harvest.xyz/sitemap.xml
