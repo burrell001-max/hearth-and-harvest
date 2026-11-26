@@ -3,79 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page Not Found | Hearth & Harvest</title>
-<meta name="description" content="The page you're looking for doesn't exist on Hearth & Harvest.">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','region':['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH']});
+  gtag('consent', 'default', {'ad_storage':'granted','ad_user_data':'granted','ad_personalization':'granted','analytics_storage':'granted'});
+</script>
+<meta name="google-adsense-account" content="ca-pub-5783852883880667">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5783852883880667" crossorigin="anonymous"></script>
+<title>Page Not Found | Hearth &amp; Harvest</title>
+<meta name="description" content="The page you asked for is not on Hearth &amp; Harvest. Browse the recipe collection or head back to the main homepage.">
 <meta name="robots" content="noindex">
+<meta property="og:title" content="Page Not Found | Hearth &amp; Harvest">
+<meta property="og:description" content="The page you asked for is not on Hearth &amp; Harvest. Browse the recipe collection or head back to the main homepage.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hearth-and-harvest.xyz/404.html">
+<meta property="og:image" content="https://hearth-and-harvest.xyz/assets/images/recipes/chocolate-cake.webp">
+<meta property="og:site_name" content="Hearth &amp; Harvest">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <style>
-    :root {
-        --bg: #faf6ef;
-        --text: #2b1d13;
-        --text-muted: #8a7a68;
-        --primary: #b5651d;
-    }
-    * { box-sizing: border-box; }
-    body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg);
-        color: var(--text);
-        font-family: Georgia, 'Times New Roman', serif;
-    }
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
-        border-bottom: 1px solid #e7ded1;
-    }
-    .logo { font-weight: bold; font-size: 1.3rem; color: var(--text); text-decoration: none; }
-    nav a { color: var(--text); text-decoration: none; margin-left: 24px; font-size: 0.95rem; }
-    nav a:hover { color: var(--primary); }
-    main {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 60px 24px;
-    }
-    h1 { font-size: 4rem; margin-bottom: 10px; }
-    p { color: var(--text); margin-bottom: 30px; font-size: 1.1rem; }
-    .btn {
-        display: inline-block;
-        background: var(--primary);
-        color: #fff;
-        text-decoration: none;
-        padding: 14px 28px;
-        border-radius: 8px;
-        font-weight: bold;
-    }
-    footer { text-align: center; padding: 30px 20px; color: var(--text-muted); font-size: 0.9rem; }
-    footer a { color: var(--primary); text-decoration: none; margin: 0 8px; }
-</style>
+        :root { --primary:#e67e22; --text-dark:#2c3e50; --text-muted:#7f8c8d; --bg-light:#f8f9fa; }
+        body { font-family:'Segoe UI',system-ui,sans-serif; margin:0; background:var(--bg-light); color:#333; line-height:1.7; }
+        header { background:#fff; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 10px rgba(0,0,0,.05); flex-wrap:wrap; gap:12px; }
+        .logo { font-size:1.5rem; font-weight:bold; color:var(--primary); text-decoration:none; }
+        nav a { margin-left:20px; text-decoration:none; color:var(--text-dark); font-weight:500; }
+        .container { max-width:800px; margin:40px auto; background:#fff; padding:40px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,.05); }
+        h1 { color:var(--text-dark); margin-top:0; }
+        h2 { color:var(--text-dark); border-left:4px solid var(--primary); padding-left:10px; margin-top:34px; font-size:1.25rem; }
+        a { color:#b5651d; }
+        .updated { color:var(--text-muted); font-style:italic; margin-bottom:28px; }
+        .lede { font-size:1.1rem; color:var(--text-dark); }
+        footer { text-align:center; padding:30px 20px; color:var(--text-muted); font-size:.9rem; }
+        footer a { color:var(--primary); text-decoration:none; margin:0 8px; }
+        @media (max-width:600px){ header{padding:16px 20px;} .container{padding:24px 20px;margin:20px 12px;} nav a{margin-left:0;margin-right:16px;} }
+    </style>
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html">Hearth&amp;Harvest</a>
+        <a href="index.html" class="logo">HearthHarvest</a>
         <nav>
             <a href="index.html#recipes">Recipes</a>
             <a href="index.html#categories">Categories</a>
             <a href="about.html">About</a>
         </nav>
     </header>
-
-    <main>
-        <h1>404</h1>
-        <p>Looks like this recipe wandered off the counter. The page you're looking for doesn't exist.</p>
-        <a class="btn" href="index.html">← Back to Hearth &amp; Harvest</a>
+    <main class="container">
+        <h1>Page not found</h1>
+        <p class="lede">This page is not on the menu. It may have been renamed, or the link that brought you here may have a typo in it.</p>
+        <p>The recipe collection is still where you left it, with dinner, breakfast, dessert, healthy and quick meal ideas, each with ingredients, numbered steps and notes on what to watch for.</p>
+        <p><a href="index.html">Back to the homepage</a> &middot; <a href="index.html#recipes">Browse all recipes</a> &middot; <a href="contact.html">Tell us about the broken link</a></p>
+        <p>If you followed a link from another site and it led here, the <a href="contact.html">contact page</a> is the quickest way to report it, and it helps to include the page you were trying to reach.</p>
     </main>
-
     <footer>
-        <a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; <a href="contact.html">Contact</a> &middot; <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="cookie-policy.html">Cookie Policy</a> &middot; <a href="terms.html">Terms of Use</a>
     </footer>
 </body>
 </html>
