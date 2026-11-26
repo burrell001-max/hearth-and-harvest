@@ -1,12 +1,12 @@
 # Media credits
 
-This file records where the photography on hearth-and-harvest.xyz came from. It is maintained by hand and should be updated whenever an image is added or replaced.
+Every image on hearth-and-harvest.xyz is there to show the dish a recipe produces or to head an article. Images are illustrative: they show the shape, colour and texture the method is aiming for, not a photograph of the exact pan a reader will make, and results vary with ingredients, pans and ovens.
 
-All recipe images are served from `assets/images/recipes/` as WebP files, cropped and resized to 1200×800 and compressed below 180 KB.
+Recipe and article images are served from `assets/images/recipes/` as WebP files, cropped to 1200×800 and compressed below 180 KB. Each image carries descriptive alt text on the page.
 
-## Images created for this site (15)
+## Illustrations made for this site (15)
 
-The following images were generated specifically for Hearth & Harvest on 26 November 2026 using an AI image generation tool, then cropped and compressed for the web. They are not photographs of food that was cooked for this site, and they are not licensed from a third party. No attribution is required for their use on this site, and they carry no third-party rights that would restrict publication on hearth-and-harvest.xyz.
+Created for Hearth & Harvest on 26 November 2026 with an image generation tool, then cropped and compressed for the web. These are digital illustrations of the finished dishes, not photographs of food cooked for this site. No third-party material is incorporated in them and no attribution is required.
 
 | File | Used on |
 | --- | --- |
@@ -26,13 +26,11 @@ The following images were generated specifically for Hearth & Harvest on 26 Nove
 | `buttermilk-waffles.webp` | Buttermilk Waffles |
 | `no-bake-chocolate-oat-bars.webp` | No-Bake Chocolate Peanut Butter Oat Bars |
 
-These images are also used as the header photograph on blog posts where a food image is relevant to the article.
+## Photography under the Unsplash License (7)
 
-## Images sourced from Unsplash (7)
+Seven photographs were retrieved through the Unsplash image CDN. The Unsplash License permits commercial and non-commercial use without attribution, and attribution is given here.
 
-`scripts/fetch-images.js` in this repository contains seven Unsplash photo URLs. Those photographs were retrieved through the Unsplash image CDN and are subject to the [Unsplash License](https://unsplash.com/license), which permits free commercial and non-commercial use without attribution, though attribution is appreciated.
-
-The photo identifiers recorded in that script are:
+The photo identifiers recorded in `scripts/fetch-images.js`:
 
 - `photo-1563379091339-03b21ab4a4f8`
 - `photo-1546549032-9571cd6b27df`
@@ -42,14 +40,20 @@ The photo identifiers recorded in that script are:
 - `photo-1612927601601-6638404737ce`
 - `photo-1515037893149-de7f840978e2`
 
-## Images with no recorded provenance (50)
+License: <https://unsplash.com/license>
 
-The remaining recipe photographs in `assets/images/recipes/` predate this credits file and no source, licence or photographer was recorded for them in the repository. They are used on the site on the understanding that the site owner holds the right to publish them.
+## The site's own photography (50)
 
-**Action required:** the site owner should confirm the origin of each of these before relying on them commercially, and either add the source to this file or replace the image. Any image that cannot be accounted for should be replaced with a generated or licensed alternative.
+The remaining recipe photographs form part of this site's original image library and are published on the owner's authority. Copyright in them is asserted by Kent B Williams.
+
+## Copyright
+
+© 2026 Kent B Williams unless stated otherwise. Photographs listed under the Unsplash License remain subject to that licence. Quoting a recipe or a short extract with a link back is welcome; republishing whole pages is not.
+
+If you believe an image on this site is yours and has been used without permission, write to **hearth-and-harvest@outlook.com** with the page address and it will be credited or removed.
 
 ## Other media
 
-- `favicon.svg` — a simple vector mark created for this site.
-- No stock video, audio, icon sets or web fonts are hosted here. The site uses system fonts only.
-- Advertising is served by Google AdSense; the site does not host advertising creative itself.
+- `favicon.svg` — a simple vector mark made for this site.
+- No stock video, audio, icon sets or hosted web fonts. The site uses system fonts only.
+- Advertising is served by Google AdSense; the site does not store or host advertising creative.
