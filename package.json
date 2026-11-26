@@ -4,7 +4,7 @@
   "description": "Premium, SEO-optimized food blog structure",
   "main": "scripts/fetch-images.js",
   "scripts": {
-    "get-images": "node scripts/fetch-images.js"
+    "get-images": "node scripts/sync-guard.js"
   },
   "dependencies": {
     "axios": "^1.6.0",
