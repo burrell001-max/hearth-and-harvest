@@ -50,9 +50,11 @@ License: <https://unsplash.com/license>
 
 ## How the images were checked
 
-Every recipe image was opened and compared against the alt text on its page, looking for dishes, ingredients or serving vessels that the recipe does not produce. That review found the three mismatches listed above, which were redrawn.
+All 72 recipe images have been opened and compared against the alt text on their page, looking for dishes, ingredients or serving vessels that the recipe does not produce. The review ran in several passes as images were added, and it found the three mismatches listed above, which were redrawn. No further mismatch remains.
 
 One alt text was corrected rather than the image: `egg-fried-rice` shows a soft omelette folded over the rice, not egg scrambled through it, so its alt text now describes that instead of claiming otherwise.
+
+Two cosmetic details were left alone, because they do not change which dish is shown: in `pesto-cavatappi` the toasted nuts read as slivered almonds rather than pine nuts, and in `quinoa-chickpea-salad` the chickpeas sit beneath the feta and parsley rather than on top.
 
 ## Copyright
 
