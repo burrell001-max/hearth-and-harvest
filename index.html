@@ -1162,6 +1162,8 @@
     e.preventDefault();
     if (window.googlefc) {
       googlefc.callbackQueue.push(googlefc.showRevocationMessage);
+    } else {
+      window.location.href = 'cookie-policy.html';
     }
   });
 })();
