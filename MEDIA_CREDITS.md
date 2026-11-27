@@ -1,6 +1,6 @@
 # Media credits
 
-Every image on hearth-and-harvest.xyz is there to show the dish a recipe produces or to head an article. Images are illustrative: they show the shape, colour and texture the method is aiming for, not a photograph of the exact pan a reader will make, and results vary with ingredients, pans and ovens.
+Every image on hearth-and-harvest.xyz is there to show the dish a recipe produces, to head an article, or to give a non-recipe page such as the 404 page a neutral image for social previews. Images are illustrative: they show the shape, colour and texture the method is aiming for, not a photograph of the exact pan a reader will make, and results vary with ingredients, pans and ovens.
 
 Recipe and article images are served from `assets/images/recipes/` as WebP files, cropped to 1200×800 and compressed below 180 KB. Each image carries descriptive alt text on the page.
 
@@ -65,5 +65,6 @@ If you believe an image on this site is yours and has been used without permissi
 ## Other media
 
 - `favicon.svg` — a simple vector mark made for this site.
+- `assets/images/og-default.webp` — a kitchen-surface illustration made for this site with the same image generation tool, served at 1200×800 WebP and used as the `og:image` for the 404 page, so a shared dead link previews a neutral scene rather than a recipe. Same terms as the recipe illustrations: no third-party material, no attribution required.
 - No stock video, audio, icon sets or hosted web fonts. The site uses system fonts only.
 - Advertising is served by Google AdSense; the site does not store or host advertising creative.
